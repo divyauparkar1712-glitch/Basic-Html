@@ -1,0 +1,80 @@
+<!--Basic Structure of an HTML5 Table-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Table Example</title>
+</head>
+<body>
+    <h2>Student Information</h2>
+    <!--Table tag-->
+    <table border="1" cellpadding="10" cellspacing="0">
+        <!--Table Row-->
+        <tr>
+            <!--Table Heading-->
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Semester</th>
+        </tr>    
+
+        <tr>
+            <!--Table Data-->
+            <td>103</td>
+            <td>Divya</td>
+            <td>Computer Diploma</td>
+            <td>5th</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Siddhatri</td>
+            <td>Computer Diploma</td>
+            <td>5th</td>
+        </tr>
+
+        <tr>
+            <!--rowspan attribute to span across multiple rows-->
+            <td rowspan="2">Computer Diploma</td>
+            <td>Semester 5</td>
+        </tr>
+        <tr>
+            <td>Semester 6</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!--using HTML5 Semantic Tags-->
+<table border="1">
+    <!--thead tag-->
+    <thead>
+        <tr>
+            <th>Employee</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+
+    <!--tbody tag-->
+    <tbody>
+        <tr>
+            <td>Divya</td>
+            <td>50000</td>
+        </tr>
+        <tr>
+            <td>Siddhatri</td>
+            <td>60000</td>
+        </tr>
+        <tr>
+            <td>Anubha</td>
+            <td>55000</td>
+        </tr>
+    </tbody>
+
+        <!--tfoot tag-->
+        <tfoot>
+            <tr>
+                <!--colspan attribute to span across multiple columns-->
+                <td colspan="2">Company Payroll Data</td>
+            </tr>
+        </tfoot>
+</table>
