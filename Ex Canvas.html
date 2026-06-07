@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Example</title>
+    </head>
+<body>
+    <canvas id="myCanvas" width="500" height="300"
+    style="border:1px solid black;
+    background-color: aqua;">
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        //Circle
+        ctx.beginPath();
+        ctx.arc(70, 70, 40, 0,2*Math.PI);
+        ctx.fillStyle = "blue";
+        ctx.strokeStyle="red";
+        ctx.fill();
+        ctx.stroke();
+
+        //Rectangle
+        ctx.fillStyle = "green";
+        ctx.strokeStyle="purple";
+        ctx.fillRect(150, 30, 100, 80);
+        ctx.strokeRect(150, 30, 100, 80);
+
+        //Right-Angled Triangle
+        ctx.beginPath();
+        ctx.moveTo(50,200);
+        ctx.lineTo(50,270);
+        ctx.lineTo(120,270);
+        ctx.closePath();
+        ctx.fillStyle = "red";
+        ctx.strokeStyle="green";
+        ctx.fill();
+        ctx.stroke();
+
+        //Left-Angled Triangle
+        ctx.beginPath();
+        ctx.moveTo(120,270);
+        ctx.lineTo(190,270);
+        ctx.lineTo(190,200);
+        ctx.closePath();
+        ctx.fillStyle = "red";
+        ctx.strokeStyle="green";
+        ctx.fill();
+        ctx.stroke();
+
+       //Normal Triangle
+        ctx.beginPath();
+        ctx.moveTo(400,150);
+        ctx.lineTo(350,250);
+        ctx.lineTo(450,250);
+        ctx.closePath();
+        ctx.fillStyle = "purple";
+        ctx.fill();
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+        
+    </script>
+</body>
+</html>
