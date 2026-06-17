@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eeeeee;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.boxes{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:50px;
+}
+
+.box{
+    width: 300px;
+    height: 220px;
+    background:white;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.pink{
+    height:8px;
+    width:100%;
+    background:#ff4eb8;
+}
+
+.blue{
+    height:8px;
+    width:100%;
+    background:#39d7e8;
+}
+
+.green{
+    height:8px;
+    width:100%;
+    background:#4caf50;
+}
+
+.yellow{
+    height:8px;
+    width:100%;
+    background:#e8ef00;
+}
+
+.purple{
+    height:8px;
+    width:100%;
+    background:#c07af3;
+}
+
+.lightpink{
+    height:8px;
+    width:100%;
+    background:#f58ac4;
+}
+
+.content{
+    padding:25px;
+    text-align:left;
+}
+
+.icon1{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#ff4eb8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.icon2{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#39d7e8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.icon3{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#4caf50;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.icon4{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#f1c40f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.icon5{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#9b59b6;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:25px;
+    margin-bottom: 15px;
+    color: white;
+}
+.icon6{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#e91e63;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+button{
+    margin-top:40px;
+    padding:12px 35px;
+    border-radius:10px;
+    background:#ff4eb8;
+    color:white;
+}
+
+.chat-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    margin-bottom: 15px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    background:#34e7a1;
+    color: black;
+}
+</style>
+<body>
+<div class="container">
+   <marquee scrollamount="10">
+    <h1>We work in dedicated project teams, UX design</h1>
+   </marquee>
+    <div class="boxes">
+        <div class="box">
+            <div class="pink"></div>
+            <div class="content">
+                <div class="icon1">📊</div>
+                <h3>Research user needs</h3>
+                <p>Discover pain points and understand user behaviour.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="content">
+                <div class="icon2">💡</div>
+                <h3>Prototype an idea</h3>
+                <p>Validate ideas with an interactive prototype.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="green"></div>
+            <div class="content">
+                <div class="icon3">📐</div>
+                <h3>Design a new product</h3>
+                <p>Launch an MVP with a best user experience.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="yellow"></div>
+            <div class="content">
+                <div class="icon4">🖥️</div>
+                <h3>Improve a product</h3>
+                <p>Become a category leader using UX/UI design.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="purple"></div>
+            <div class="content">
+                <div class="icon5">🛠️</div>
+                <h3>Build Marketing Plan</h3>
+                <p>Easiest way to manage your projects and tasks.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="lightpink"></div>
+            <div class="content">
+                <div class="icon6">🤝</div>
+                <h3>24/7 Support</h3>
+                <p>Amet porttitor eget dolor morbi non.</p>
+            </div>
+        </div>
+    </div>
+    <button>CONTACT US</button>
+    <div class="chat-icon">
+        <img src="c:\Users\vijay\Downloads\comment-regular (1).png">
+    </div>
+    <script>
+        function openChat(){
+            document.getElementById("chatBox").style.display="block";
+        }
+        function closeChat(){
+            document.getElementById("chatBox").style.display="none";
+        }
+        </script>
+</div>
+</body>
+</html>
